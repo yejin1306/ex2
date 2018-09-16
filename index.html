@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>자바스크립트로 스타일링 하기</title>
+	<style>
+
+		#transBut{position: absolute; width: 100px; height: 40px; text-align: center; line-height: 40px; margin: auto; background: white; top: 70%; left: 45%;}
+		#box{position: relative; background: pink; width: 800px; height: 800px; margin-top: 20px;}
+		#cat{position: absolute; width: 500px; transition: all 1s ; margin-top: 30%; left: 19%;}
+	</style>
+</head>
+<body>
+	<center>
+		<div id="box">
+		<div id="transBut">↑CLICK</div>
+	<img src="cat.jpg" id="cat">
+	<audio id="joah">
+  		<source src="joah.mp3" type="audio/mpeg">
+	</audio>
+	<script type="text/javascript">
+
+			var toggle = "off";
+
+			cat.onclick=function(){
+				
+				if (toggle == "off") {
+					cat.setAttribute("src","cat1.jpg");
+					toggle="on";
+					joah.play();
+					cat.style.borderRadius = "30%";
+
+				}else{
+					cat.setAttribute("src","cat.jpg");
+					toggle="off";
+					joah.pause();
+					cat.style.borderRadius = "0%";
+				}
+				
+			}
+	</script> 
+	</div>
+	</center>
+	
+</body>
+</html>
